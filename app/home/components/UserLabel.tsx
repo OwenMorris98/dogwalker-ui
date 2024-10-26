@@ -1,7 +1,8 @@
 import { useEffect, useState } from 'react';
 import { jwtDecode } from 'jwt-decode';
 import { sql } from '@vercel/postgres';
-import { getUserInfo, UserInfo } from '../data';
+import { UserInfo } from '../contracts/dataContracts';
+
 
 export default function UserLabel( {
   userInfo
